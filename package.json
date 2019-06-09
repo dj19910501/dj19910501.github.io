@@ -1,31 +1,45 @@
 {
-  "name": "dj19910501.github.io",
-  "version": "0.1.0",
-  "private": true,
+  "name": "likellykang.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --mode development",
+    "test": "webpack-dev-server",
+    "hotstart": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likellykang/likellykang.github.io.git"
+  },
+  "author": "Jian Deng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likellykang/likellykang.github.io/issues"
+  },
+  "homepage": "https://github.com/likellykang/likellykang.github.io#readme",
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-dom": "^16.8.6"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "path": "^0.12.7",
+    "react-hot-loader": "^4.8.4",
+    "react-router-dom": "^5.0.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
   }
 }
