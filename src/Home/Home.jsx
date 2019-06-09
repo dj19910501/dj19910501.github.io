@@ -25,7 +25,8 @@ export default class Home extends React.Component {
             const windowScroll = window.scrollY;
 
             for (var i = SECTIONS.length - 1; i >= 0; i--) {
-                if (document.getElementById(SECTIONS[i].containerId) && windowScroll + 30 >= document.getElementById(SECTIONS[i].containerId).offsetTop) {
+                if (document.getElementById(SECTIONS[i].containerId)
+                    && (windowScroll + (window.innerHeight / 2) >= document.getElementById(SECTIONS[i].containerId).offsetTop)) {
                     this.setState({
                         activeSection: SECTIONS[i].id
                     });

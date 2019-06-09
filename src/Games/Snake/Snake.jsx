@@ -55,6 +55,7 @@ export default class Snake extends React.Component {
 
         return (
             <div id='snakeContainer' className='snake-container' style={containerStyle}>
+                <div style={{ margin: '10px 0' }}>Try out the snake written in less than 200 lines of JS code.</div>
                 {
                     ALL_COORDINATES.map((coordinates, i) => {
                         const isActive = bodyCoordinates.some(c => c[0] === coordinates[0] && c[1] === coordinates[1])
