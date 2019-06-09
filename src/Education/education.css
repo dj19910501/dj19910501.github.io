@@ -1,0 +1,53 @@
+.education-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.education-section {
+    margin-bottom: 20px;
+    border-bottom: solid 1px #d4d4d4;
+    border-radius: 4px;
+}
+
+    .education-section.education-northwestern {
+        background: url("/images/northwesternLake.jpg") no-repeat center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    .education-section.education-purdue {
+        background: url("/images/purdueCampus.jpg") no-repeat center center;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .education-section .education-content-container {
+        padding: 5px 10px;
+        margin: 10px 0 0 10px;
+        border-radius: 4px;
+        padding: 5px 10px;
+    }
+
+        .education-section.education-northwestern .education-content-container {
+            background: rgba(65, 30, 125, 0.6);
+            color: white;
+        }
+
+            .education-section.education-northwestern .education-content-container img {
+                height: 60px;
+                width: 55px;
+                margin-top: 5px;
+            }
+
+        .education-section.education-purdue .education-content-container {
+            color: rgb(206, 185, 129);
+            background: rgba(206, 185, 129, 0.8);
+            color: black;
+        }
+
+            .education-section.education-purdue .education-content-container img {
+                height: 50px;
+                width: 70px;
+                margin: 10px 10px 0 0;
+            }

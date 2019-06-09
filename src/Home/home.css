@@ -1,0 +1,58 @@
+.home-container {
+    position: relative;
+    min-height: 100%;
+}
+
+    .home-container .vertical-nav {
+        writing-mode: vertical-rl;
+        position: fixed;
+        margin-top: calc(50vh - 178px);
+        z-index: 2;
+    }
+
+        .home-container .vertical-nav > div { 
+            padding: 10px 2px;
+            border: solid 1px #d4d4d4;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            background-color: white;
+            margin: 0 10px 10px 0;
+        }
+
+            .home-container .vertical-nav > div:hover,
+            .home-container .vertical-nav > div.active { 
+                color: white;
+                background-color: black;
+                border-color: black;
+            }
+
+    .home-container .avatar-container {
+        padding-top: 20px;
+        height: 340px;
+        position: relative;
+    }
+
+    .home-container .avatar-container .avatar {
+        margin-left: calc(50% - 100px);
+        width: 200px;
+        height: 200px;
+        background-image: url("/images/JianDeng.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: solid 2px white;
+    }
+
+    .home-container .avatar-container .avatar-description {
+        font-size: 22px;
+    }
+
+        .home-container .avatar-container .avatar-description .hive9-icon {
+            width: 26px;
+            height: 28px;
+            margin-right: 5px;
+            padding-top: 2px;
+            vertical-align: top;
+        }
