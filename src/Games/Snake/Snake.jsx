@@ -71,12 +71,12 @@ export default class Snake extends React.Component {
                 </div>
                 {
                     gameover && (
-                        <div style={{ position: 'absolute', top: 0, left: '30%', color: 'red', fontSize: '40px' }}>GAME OVER !</div>
+                        <div style={{ position: 'absolute', top: 30, left: '30%', color: 'red', fontSize: '40px' }}>GAME OVER !</div>
                     )
                 }
                 {
                     win && (
-                        <div style={{ position: 'absolute', top: 0, left: '30%', color: 'green', fontSize: '40px' }}>You Win !</div>
+                        <div style={{ position: 'absolute', top: 30, left: '30%', color: 'green', fontSize: '40px' }}>You Win !</div>
                     )
                 }
             </div>
