@@ -75,6 +75,6 @@ export default class Home extends React.Component {
     }
 
     scrollToSection = section => {
-        window.scrollTo(0, document.getElementById(section.containerId).offsetTop);
+        window.scrollTo(0, document.getElementById(section.containerId).offsetTop - 200);
     }
 }

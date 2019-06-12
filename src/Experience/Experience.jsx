@@ -21,7 +21,7 @@ export default class Experience extends React.Component {
                         <ul>
                             <li>Converted existing app into React with better performance and usability.</li>
                             <li>Developed a React grid component from the ground in replacement of DHTMLX grid for presenting large data sets more efficiently.</li>
-                            <li>Refactored existing frond end code base, with 10k+ lines of code removal.</li>
+                            <li>Refactored existing front end code base, with 10k+ lines of code removal.</li>
                         </ul>
                     </div>
                 </div>
