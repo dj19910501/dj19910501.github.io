@@ -16,7 +16,7 @@ export default class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeSection: 'myInfo'
+            activeSection: 'games'
         };
     }
 
@@ -45,8 +45,8 @@ export default class Home extends React.Component {
             <div className='home-container'>
                 <div className='vertical-nav'>
                     {
-                        SECTIONS.map(section => (
-                            <div className={activeSection == section.id ? 'active' : ''} onClick={() => this.scrollToSection(section)}>
+                        SECTIONS.map((section, i) => (
+                            <div key={i} className={activeSection == section.id ? 'active' : ''} onClick={() => this.scrollToSection(section)}>
                                 {section.name}
                             </div>
                         ))

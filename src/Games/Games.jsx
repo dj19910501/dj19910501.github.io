@@ -1,6 +1,7 @@
 import React from 'react';
 import './games.css';
 import Snake from './Snake/Snake.jsx';
+import Stock from './Stock/Stock.jsx';
 
 export default class Games extends React.Component {
     constructor(props) {
@@ -12,6 +13,9 @@ export default class Games extends React.Component {
 
     render() {
         const { game } = this.state;
+        // {game == 'stock' && <Stock />}
+        //<div className={`game-nav inline-top ${game == 'stock' ? 'active' : ''}`}>Stock</div>
+                    
         return (
             <div id='gamesContainer' className='games-container general-container'>
                 <div className='section-title'>Games</div>

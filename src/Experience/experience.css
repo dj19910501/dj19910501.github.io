@@ -1,5 +1,5 @@
 .experience-container {
-    padding: 20px 20%;
+    padding: 20px 10%;
 }
 
 .experience-section {
@@ -8,8 +8,12 @@
     border-top: solid 1px #d4d4d4;
 }
 
-    .experience-section:last-child {
+    .experience-section.microsoft-section {
         border-bottom: solid 1px #d4d4d4;
+    }
+
+    .experience-section.microsoft-section .experience-image-container {
+        float: right;
     }
 
 .experience-image-container {
@@ -21,17 +25,44 @@
         margin-top: 30px;
     }
 
-.experience-content-container{
+.experience-content-container {
     padding: 10px 0;
     width: calc(100% - 300px);
     line-height: 24px;
     font-size: 20px;
 }
 
-    .experience-content-container:first-child {
+    .experience-section.hive9-section .experience-content-container {
+        padding-left: 10%;
+    }
+
+    .experience-section.microsoft-section .experience-content-container {
         padding-right: 10%;
     }
 
-    .experience-content-container:last-child {
-        padding-left: 10%;
+
+@media screen and (max-width: 1023px) {
+    .experience-image-container {
+        display: block;
+        text-align: center;
     }
+
+    .experience-content-container {
+        display: block;
+        width: 100%;
+    }
+
+        .experience-section.hive9-section .experience-content-container {
+            padding-left: 0;
+        }
+
+    .experience-section.microsoft-section .experience-image-container {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .experience-image-container {
+        width: 150px;
+    }
+}

@@ -41,45 +41,36 @@ export default class Snake extends React.Component {
 
     render() {
         const { bodyCoordinates, food, gameover, win } = this.state;
-        const containerWidth = 500;
-        const containerHeight = 500;
-        const containerStyle = {
-            width: containerWidth,
-            height: containerHeight,
-            position: 'relative'
-        };
-        const cellStyle = {
-            width: containerWidth / MAP_SIZE[0],
-            height: containerWidth / MAP_SIZE[1],
-        };
 
         return (
-            <div id='snakeContainer' className='snake-container' style={containerStyle}>
+            <>
                 <div style={{ margin: '10px 0' }}>Try out the snake written in less than 200 lines of JS code.</div>
-                {
-                    ALL_COORDINATES.map((coordinates, i) => {
-                        const isActive = bodyCoordinates.some(c => c[0] === coordinates[0] && c[1] === coordinates[1])
-                            || coordinates[0] === food[0] && coordinates[1] === food[1];
+                <div id='snakeContainer' className='snake-container'>
+                    {
+                        ALL_COORDINATES.map((coordinates, i) => {
+                            const isActive = bodyCoordinates.some(c => c[0] === coordinates[0] && c[1] === coordinates[1])
+                                || coordinates[0] === food[0] && coordinates[1] === food[1];
 
-                        return (
-                            <div className={`inline-top snake-cell ${isActive ? 'active' : ''}`} key={i * 100 + j} style={cellStyle}></div>
-                        );
-                    })
-                }
+                            return (
+                                <div className={`inline-top snake-cell ${isActive ? 'active' : ''}`} key={i * 100 + j}></div>
+                            );
+                        })
+                    }
+                    {
+                        gameover && (
+                            <div style={{ position: 'absolute', top: 30, left: '30%', color: 'red', fontSize: '40px' }}>GAME OVER !</div>
+                        )
+                    }
+                    {
+                        win && (
+                            <div style={{ position: 'absolute', top: 30, left: '30%', color: 'green', fontSize: '40px' }}>You Win !</div>
+                        )
+                    }
+                </div>
                 <div className='align-center' style={{ margin: '10px 0' }}>
                     <button onClick={this.reset}>Start</button>
                 </div>
-                {
-                    gameover && (
-                        <div style={{ position: 'absolute', top: 30, left: '30%', color: 'red', fontSize: '40px' }}>GAME OVER !</div>
-                    )
-                }
-                {
-                    win && (
-                        <div style={{ position: 'absolute', top: 30, left: '30%', color: 'green', fontSize: '40px' }}>You Win !</div>
-                    )
-                }
-            </div>
+            </>
         );
     }
 

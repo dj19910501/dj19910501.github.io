@@ -10,7 +10,7 @@ export default class Experience extends React.Component {
         return (
             <div id='experienceContainer' className='experience-container'>
                 <div className='section-title'>My Expierence</div>
-                <div className='experience-section'>
+                <div className='experience-section hive9-section'>
                     <div className='inline-middle experience-image-container'>
                         <img src='/images/hive9Logo.webp' />
                     </div>
@@ -25,7 +25,10 @@ export default class Experience extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div className='experience-section'>
+                <div className='experience-section microsoft-section'>
+                    <div className='inline-middle experience-image-container'>
+                        <img src='/images/microsoft-logo.png' />
+                    </div>
                     <div className='inline-top experience-content-container'>
                         <p>UI Developer (2015 - 2016 as a contractor via Marlabs)</p>
                         <p>Developed UI for Microsoft's internal tool Dynamics AX 2012 Expense app, which is for creating, managing and submitting expense report.</p>
@@ -34,9 +37,6 @@ export default class Experience extends React.Component {
                             <li>Create pages, panels and flyouts using HTML5, CSS3, JavaScript, JQuery, Bootstrap and KnockoutJS to provide rich and responsive display.</li>
                             <li>Provide globalization and localization support for 40+ countries.</li>
                         </ul>
-                    </div>
-                    <div className='inline-middle experience-image-container'>
-                        <img src='/images/microsoft-logo.png' />
                     </div>
                 </div>
             </div>

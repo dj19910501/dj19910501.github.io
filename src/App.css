@@ -57,6 +57,11 @@ a:hover {
 }
 
 .general-container {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.common-border {
+    border: solid 1px #d4d4d4;
+    border-radius: 4px;
 }

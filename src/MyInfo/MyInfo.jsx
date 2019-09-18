@@ -11,9 +11,10 @@ export default class MyInfo extends React.Component {
             <div id='myInfoContainer' className='my-info-container general-container'>
                 <p>Welcome to my github page!</p>
                 <p>
-                    I'm Jian, originally from China. Currently I'm working as a Front End Developer at Hive9, located in Austin, Texas. For the past two
-                    years and a half, I've been working on both building out new features and converting the existing app into React. The process of
-                    crafting all kinds of components and have them work efficiently with each other has been thrilling and satisfying.
+                    I am leading the front-end development at Hive9, a marketing performance management startup. Apart
+                    from building new features to meet client's needs, I am also experienced in migrating existing
+                    applications to newer technologies. My passion in work lies in building interactive, comprehensive 
+                    and user friendly interfaces with minimum complexity.
                 </p>
             </div>
         );
