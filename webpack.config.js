@@ -5,6 +5,10 @@ module.exports = {
     entry: {
         'App': path.resolve(__dirname, 'src/App.jsx'),
     },
+    resolve: {
+        // Add '.ts' and '.tsx' as resolvable extensions.
+        extensions: [".ts", ".tsx", '.js']
+    },
     output: {
         path: path.resolve(__dirname),
         filename: '[name].js',
@@ -26,7 +30,15 @@ module.exports = {
                     loader: 'file-loader',
                     options: {}
                 }]
-            }
+            }, {
+                test: /\.ts(x?)$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "ts-loader"
+                    }
+                ]
+            },
         ]
     },
     devServer: {

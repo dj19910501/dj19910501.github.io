@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import MyInfo from './../MyInfo/MyInfo.jsx';
+import MyInfo from './../MyInfo/MyInfo';
 import Experience from './../Experience/Experience.jsx';
 import Education from './../Education/Education.jsx';
 import Games from './../Games/Games.jsx';
